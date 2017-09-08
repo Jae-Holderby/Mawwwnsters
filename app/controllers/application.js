@@ -4,5 +4,12 @@ export default Ember.Controller.extend({
   leastEyes: false,
   mostEyes: false,
   alphabeticalAtoZ: false,
-  alphabeticalZtoA: false
+  alphabeticalZtoA: false,
+
+  actions: {
+    setScary(){
+
+    },
+    
+  }
 });

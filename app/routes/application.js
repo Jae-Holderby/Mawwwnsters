@@ -2,9 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return Ember.RSVP.hash({
-  monsters: this.get('store').findAll("messages")
-    })
+    return this.get('store').findAll("monsters")
   }
-
 });
