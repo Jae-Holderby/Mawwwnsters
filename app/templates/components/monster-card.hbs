@@ -3,7 +3,11 @@
   <div class="card-block">
     <h4 class="card-title">{{monster.name}}</h4>
     <p class="card-text">{{monster.description}}</p>
-    <a href="#" class="btn btn-danger">Scary!!!</a>
-    <a href="#" class="btn btn-danger">Not Scary!!!</a>
+      {{#if monster.scary}}
+      <a href="#" class="btn btn-danger"{{action "setNotScary"}}>Not Scary!!!</a>
+      {{else}}
+      <a href="#" class="btn btn-danger"{{action "setScary"}}>Scary!!!</a>
+      {{/if}}
+
   </div>
 </div>

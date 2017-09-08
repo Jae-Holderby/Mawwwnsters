@@ -4,6 +4,6 @@ export default DS.Model.extend({
   name: DS.attr(),
   description: DS.attr(),
   image: DS.attr(),
-  eyes: DS.attr("number"),
+  eyes: DS.attr(),
   scary: DS.attr("boolean")
 });

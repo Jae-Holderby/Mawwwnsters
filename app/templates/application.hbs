@@ -1,7 +1,19 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="height: 10vh;">
+
+<a class="navbar-brand disabled" style="font-size: 2em;">Mawwwwwnsters</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+ <br>
+
+</div>
+</nav>
+
 <div class="card-group">
 {{#each model as |monster|}}
   {{monster-card
   model=model
-monster=monster}}
+monster=monster
+setScary=(action "setScary")
+setNotScary=(action "setNotScary")
+}}
 {{/each}}
 </div>
